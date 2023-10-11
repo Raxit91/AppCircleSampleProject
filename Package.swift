@@ -13,9 +13,14 @@ let package = Package(
             name: "AppCircleSampleProject",
             targets: ["AppCircleSampleProject"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/Datadog/dd-sdk-ios.git", .upToNextMajor(from: "2.3.0")),
+        .package(url: "https://github.com/amplitude/Amplitude-iOS.git", .branch("main"))
+    ],
     targets: [
         .target(
             name: "AppCircleSampleProject",
+            dependencies: ["dd-sdk-ios", "Amplitude-iOS"],
             path: "Sources"),
     ],
     swiftLanguageVersions: [
