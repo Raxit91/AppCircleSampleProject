@@ -5,9 +5,9 @@
         "package": "Amplitude",
         "repositoryURL": "https://github.com/amplitude/Amplitude-iOS.git",
         "state": {
-          "branch": "main",
+          "branch": null,
           "revision": "dca2c744336e651ee285011282b86accc2ce3704",
-          "version": null
+          "version": "8.17.2"
         }
       },
       {
